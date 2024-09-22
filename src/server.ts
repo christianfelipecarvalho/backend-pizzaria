@@ -33,4 +33,4 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) =>{
     });
 } )
 
-app.listen(3333, () => console.log('Server está em execução!!!'));
+app.listen(process.env.PORT, () => console.log('Server está em execução!!!'));
